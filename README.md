@@ -20,5 +20,13 @@ Hyperparameters, including the regularization parameter `C`, the polynomial degr
 ### Model Evaluation
 Performance is assessed using accuracy, sensitivity, specificity, precision, recall, and balanced accuracy metrics. These evaluations guide the selection of the most effective kernel and parameter settings for AD diagnosis.
 
+## Why SVM is Preferred Over KNN
+- **Accuracy**: SVM tends to outperform KNN in high-dimensional spaces, making it more suitable for the complex patterns in AD diagnosis.
+- **Scalability**: SVM is more scalable and computationally efficient, especially important for large datasets.
+- **Interpretability**: Despite SVM's complex decision boundaries, the support vectors provide insights into the classification decision.
+- **Parameter Tuning**: While both models require hyperparameter tuning, SVM's ability to handle overfitting through regularization makes it robust.
+- **Model Complexity**: SVM's kernel trick allows for modeling complex non-linear relationships without increasing the computational burden.
+- **Computational Resources**: SVM's prediction phase is more efficient than KNN, which must compute distances to all training instances.
+
 ## Conclusion
 The project leverages SVM's versatility with different kernels to address the high-dimensional and complex nature of predicting Alzheimer’s Disease from cerebral cortex glucose metabolism data. Through meticulous model development and evaluation, it illustrates the potential of machine learning in medical diagnostics.
